@@ -1,0 +1,37 @@
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+* Some important CLI commands
+
+-- To start server in CLI (as a windows 11 user) 
+  - Navigate to the app home directory
+  - run using the command: ruby bin/rails s
+
+-- To generate a new page (tested in the home page)
+  - Command: bin/rails generate controller NAME [action action] [options]
+  - Example: bin/rails generate controller Greetings hello
+  - Full documentation: https://guides.rubyonrails.org/command_line.html
+
+* Database
+Sqlite
+
+* Ruby version
+ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [x64-mingw-ucrt]
+
+
+
+Things you may want to cover:
+
+* System dependencies
+
+* Configuration
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* ...
