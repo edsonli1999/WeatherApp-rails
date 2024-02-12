@@ -11,7 +11,8 @@ application up and running.
   - run using the command: ruby bin/rails s
 ### (on wsl)
   - Navigate to app home directory
-  - run using the command: bin/dev (for tailwind css)
+  - run using the command: bin/dev
+  - alternatively: bin/rails server
 
 ## To generate a new page (tested in the home page)
   - Command: bin/rails generate controller NAME [action action] [options]
