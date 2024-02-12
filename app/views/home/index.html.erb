@@ -1,2 +1,13 @@
-<h1>A Greeting for You!</h1>
-<p><%= @message %></p>
+<div class="text-3xl font-bold underline">
+  <p><%= @message %></p>
+</div>
+
+<div class="text-2xl font-semi-bold">
+  <h1> <%= @data['name'] %> </h1>
+  <p> <%= @data['weather'].first['main'] %> </p>
+  <p> <%= @data['weather'].first['description'] %> </p>
+
+  <h1> Temperature info: </h1>
+  <p> Temp: <%= @data['main']['temp'] %> </p>
+  <p> Feels like: <%= @data['main']['feels_like'] %> </p>
+</div>

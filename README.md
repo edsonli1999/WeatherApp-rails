@@ -5,9 +5,13 @@ application up and running.
 
 * Some important CLI commands
 
--- To start server in CLI (as a windows 11 user) 
+-- To start server in CLI
+  (windows 11 cmd) 
   - Navigate to the app home directory
   - run using the command: ruby bin/rails s
+  (on wsl)
+  - Navigate to app home directory
+  - run using the command: bin/dev (for tailwind css)
 
 -- To generate a new page (tested in the home page)
   - Command: bin/rails generate controller NAME [action action] [options]
