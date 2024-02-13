@@ -1,5 +1,3 @@
-require 'net/http'
-
 class HomeController < ApplicationController
   def index
     @message = "Edson's Weather App"
