@@ -6,15 +6,15 @@
   <div class="mx-auto max-w-md bg-gray-200 shadow-xl ring-1 ring-gray-900/5 rounded-lg">
     <div class="relative px-6 pt-10 pb-8 text-xl font-semi-bold w-full text-center ">
       <%# Melbourne %>
-      <h1 class="text-2xl font-bold"> <%= @data['name'] %> </h1>
+      <h1 class="text-2xl font-bold"> <%= @weather.location %> </h1>
       <div class="flex flex-row justify-center">
-        <p class="mt-8"> <%= @data['weather'].first['description'] %> </p>
-        <img src="http://openweathermap.org/img/wn/<%=@data["weather"].first["icon"]%>@2x.png" />
+        <p class="mt-8"> <%= @weather.description %> </p>
+        <img src="<%= @weather.icon_url %>"/>
       </div>
       <%# Temp info %>
       <h1 class="font-bold"> Temperature info </h1>
-      <p> Current: <%= @data['main']['temp'] %> °C </p>
-      <p> Feels like: <%= @data['main']['feels_like'] %> °C </p>
+      <p> Current: <%= @weather.temperature %> °C </p>
+      <p> Feels like: <%= @weather.feels_like %> °C </p>  
     </div>
   </div>
 </div>
