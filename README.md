@@ -25,18 +25,5 @@ Sqlite
 # Ruby version
 ruby 3.1.4p223 (2023-03-30 revision 957bb7cb81) [x64-mingw-ucrt]
 
-
-
-Things you may want to cover:
-
-* System dependencies
-
-* Configuration
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* ...
+# Resources:
+Code (https://www.youtube.com/watch?v=PjVzoW-rB9U)
