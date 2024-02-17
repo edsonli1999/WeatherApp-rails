@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.1.4"
+ruby "3.3.0"
 
 # Dot env gemfile [https://github.com/bkeepers/dotenv]
 gem "dotenv", groups: [:development, :test]
