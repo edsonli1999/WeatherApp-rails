@@ -1,7 +1,9 @@
-# README
+# Tech Stack
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails, Tailwind CSS, both Postgresql and Sqlite3, deployed on Heroku and Fly.io
+Heroku link (Postgresql): https://frozen-peak-54821-90696d8859b1.herokuapp.com
+Fly.io link (Sqlite3): https://edsons-weather-app.fly.dev
+
 
 # Some important CLI commands
 
@@ -25,8 +27,7 @@ application up and running.
 
 # Deployment notes
   - This app exists on both Heroku and Fly.io
-  - Heroku link: https://frozen-peak-54821-90696d8859b1.herokuapp.com
-  - Fly.io link: https://edsons-weather-app.fly.dev
+  - links at the top of this readme
 
 ### To deploy to Heroku: 
   - change DB to postgresql 
