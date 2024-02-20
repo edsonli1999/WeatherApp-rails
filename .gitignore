@@ -41,3 +41,7 @@
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
+
+# Ignore default Litestack SQLite databases.
+/db/**/*.sqlite3
+/db/**/*.sqlite3-*
