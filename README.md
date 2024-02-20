@@ -8,19 +8,19 @@ application up and running.
 ## To start server in CLI
 ### (windows 11 cmd) 
   - Navigate to the app home directory
-  - run using the command: ruby bin/rails s
+  - run using the command: `ruby bin/rails s`
 ### (on wsl)
   - Navigate to app home directory
-  - run using the command: bin/dev
+  - run using the command: `bin/dev`
   - alternatively: bin/rails server
 
 ## To generate a new page (tested in the home page)
-  - Command: bin/rails generate controller NAME [action action] [options]
-  - Example: bin/rails generate controller Greetings hello
+  - Command: `bin/rails generate controller NAME [action action] [options]`
+  - Example: `bin/rails generate controller Greetings hello`
   - Full documentation: https://guides.rubyonrails.org/command_line.html
 
 ## Changing DB from sqlite to postgresql using cli
-  - >> bundle exec rails db:system:change --to=postgresql 
+  - `bundle exec rails db:system:change --to=postgresql`
   - https://www.youtube.com/watch?v=AA6GZBPeveU
 
 ## Deployment notes
@@ -30,13 +30,13 @@ application up and running.
 
   # To deploy to Heroku: 
   - change DB to postgresql 
-  - run >> bundle to install missing gems
-  - commit to git, then run >> git push heroku
+  - run `bundle` to install missing gems
+  - commit to git, then run `git push heroku`
 
   # To deploy to Fly.io 
   - change DB to sqlite3
-  - >> bundle to install missing gems
-  - then run >> fly deploy
+  - `bundle` to install missing gems
+  - then run `fly deploy`
 
 # Ruby version
 ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
