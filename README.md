@@ -23,17 +23,17 @@ application up and running.
   - `bundle exec rails db:system:change --to=postgresql`
   - https://www.youtube.com/watch?v=AA6GZBPeveU
 
-## Deployment notes
+# Deployment notes
   - This app exists on both Heroku and Fly.io
   - Heroku link: https://frozen-peak-54821-90696d8859b1.herokuapp.com
   - Fly.io link: https://edsons-weather-app.fly.dev
 
-  # To deploy to Heroku: 
+### To deploy to Heroku: 
   - change DB to postgresql 
   - run `bundle` to install missing gems
   - commit to git, then run `git push heroku`
 
-  # To deploy to Fly.io 
+### To deploy to Fly.io 
   - change DB to sqlite3
   - `bundle` to install missing gems
   - then run `fly deploy`
@@ -42,4 +42,4 @@ application up and running.
 ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
 
 # Resources:
-Code (https://www.youtube.com/watch?v=PjVzoW-rB9U)
+Main tutorial (https://www.youtube.com/watch?v=PjVzoW-rB9U)
