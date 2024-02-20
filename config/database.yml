@@ -22,6 +22,8 @@ default: &default
 development:
   <<: *default
   database: weather_app_rails_sqlite_development
+  username: postgresql
+  password: 1Bl@ckbear
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -35,14 +37,14 @@ development:
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
+  host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  #port: 5432
+  # port: 5432
 
   # Schema search path. The server defaults to $user,public
-  #schema_search_path: myapp,sharedapp,public
+  schema_search_path: myapp,sharedapp,public
 
   # Minimum log levels, in increasing order:
   #   debug5, debug4, debug3, debug2, debug1,
@@ -56,6 +58,8 @@ development:
 test:
   <<: *default
   database: weather_app_rails_sqlite_test
+  username: postgresql
+  password: 1Bl@ckbear
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,5 +84,11 @@ test:
 production:
   <<: *default
   database: weather_app_rails_sqlite_production
-  username: weather_app_rails_sqlite
-  password: <%= ENV["WEATHER_APP_RAILS_SQLITE_DATABASE_PASSWORD"] %>
+  username: postgresql
+  password: 1Bl@ckbear
+
+# production:
+#   <<: *default
+#   database: weather_app_rails_sqlite_production
+#   username: weather_app_rails_sqlite
+#   password: <%= ENV["WEATHER_APP_RAILS_SQLITE_DATABASE_PASSWORD"] %>
