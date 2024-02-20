@@ -19,6 +19,10 @@ application up and running.
   - Example: bin/rails generate controller Greetings hello
   - Full documentation: https://guides.rubyonrails.org/command_line.html
 
+## Changing DB from sqlite to postgresql using cli
+  - >> bundle exec rails db:system:change --to=postgresql 
+  - https://www.youtube.com/watch?v=AA6GZBPeveU
+
 # Database
 Sqlite
 
