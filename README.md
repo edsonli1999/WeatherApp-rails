@@ -1,8 +1,7 @@
 # Tech Stack
-
-Ruby on Rails, Tailwind CSS, both Postgresql and Sqlite3, deployed on Heroku and Fly.io
-Heroku link (Postgresql): https://frozen-peak-54821-90696d8859b1.herokuapp.com
-Fly.io link (Sqlite3): https://edsons-weather-app.fly.dev
+- Ruby on Rails, Tailwind CSS, both Postgresql and Sqlite3, deployed on Heroku and Fly.io
+- Heroku link (Postgresql): https://frozen-peak-54821-90696d8859b1.herokuapp.com
+- Fly.io link (Sqlite3): https://edsons-weather-app.fly.dev
 
 
 # Some important CLI commands
