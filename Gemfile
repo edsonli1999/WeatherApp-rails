@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "3.3.0"
+ruby "3.2.2"
 
 # Dot env gemfile [https://github.com/bkeepers/dotenv]
 gem "dotenv", groups: [:development, :test]
@@ -76,3 +76,5 @@ gem "tailwindcss-rails", "~> 2.3"
 gem "litestack", "~> 0.4.3"
 
 gem "dockerfile-rails", ">= 1.6", :group => :development
+
+gem "honeybadger", "~> 5.5"

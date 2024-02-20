@@ -36,6 +36,7 @@ class Weather
   attr_reader :data
 
   def current_weather
+    puts data
     @current_weather ||= data["weather"].first
   end
 end

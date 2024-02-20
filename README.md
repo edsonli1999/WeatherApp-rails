@@ -27,7 +27,7 @@ application up and running.
 Sqlite
 
 # Ruby version
-ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [x64-mingw-ucrt]
+ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]
 
 # Resources:
 Code (https://www.youtube.com/watch?v=PjVzoW-rB9U)
