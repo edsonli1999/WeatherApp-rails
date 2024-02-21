@@ -28,6 +28,13 @@
   - This app exists on both Heroku and Fly.io
   - links at the top of this readme
 
+### To deploy to AWS Elastic Beanstalk:
+  - (Tested) DB is Sqlite3
+  - run `bundle lock --add-platform ruby` to add platform ruby to Gemfile.lock
+  - run `bundle` to install missing gems
+  - run `zip ../rails-default.zip -r * .[^.]*`, modifying the .zip name is possible but not necessary
+  - Go to `https://ap-southeast-2.console.aws.amazon.com/elasticbeanstalk/home?region=ap-southeast-2#/environments` and create new environment and upload source code there (tested) OR upload source code on an existing environment (untested)
+
 ### To deploy to Heroku: 
   - change DB to postgresql 
   - run `bundle` to install missing gems
