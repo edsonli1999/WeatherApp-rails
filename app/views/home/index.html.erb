@@ -1,20 +1,27 @@
 <div class="text-3xl w-full">
   <p class="font-bold underline"><%= @message %></p>
-  <p class="text-2xl"><%= Date.today.strftime("%A, %d %B %Y") %></p>
+  <p class="text-2xl"><%= Time.now.strftime("%A, %d %B %Y %I:%M %p") %></p>
+
 </div>
-<div class="relative mt-28">
-  <div class="mx-auto max-w-md bg-gray-200 shadow-xl ring-1 ring-gray-900/5 rounded-lg">
-    <div class="relative px-6 pt-10 pb-8 text-xl font-semi-bold w-full text-center ">
-      <%# Melbourne %>
-      <h1 class="text-2xl font-bold"> <%= @weather.location %> </h1>
-      <div class="flex flex-row justify-center">
-        <p class="mt-8"> <%= @weather.description %> </p>
-        <img src="<%= @weather.icon_url %>"/>
-      </div>
-      <%# Temp info %>
-      <h1 class="font-bold"> Temperature info </h1>
-      <p> Current: <%= @weather.temperature %> °C </p>
-      <p> Feels like: <%= @weather.feels_like %> °C </p>  
+
+<div class="mx-auto max-w-md mt-28">
+  <div class="relative px-6 pt-10 pb-8 text-xl font-semi-bold w-full text-center bg-gray-200 shadow-xl ring-1 ring-gray-900/5 rounded-lg">
+    <%# Melbourne %>
+    <h1 class="text-2xl font-bold"> <%= @weather.location %> </h1>
+    <div class="flex flex-row justify-center">
+      <p class="mt-8"> <%= @weather.description %> </p>
+      <img src="<%= @weather.icon_url %>"/>
     </div>
+    <%# Temp info %>
+    <h1 class="font-bold"> Temperature info </h1>
+    <p> Current: <%= @weather.temperature %> °C </p>
+    <p> Feels like: <%= @weather.feels_like %> °C </p>  
   </div>
+</div>
+
+
+<div
+  class="group flex flex-col justify-start items-start gap-2 w-96 h-56 duration-500 relative rounded-lg p-4 bg-gray-900 hover:-translate-y-2 hover:shadow-xl shadow-gray-800"
+>
+  
 </div>

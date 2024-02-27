@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @message = "Edson's Weather App"
+    @message = "Edson's Weather App ☺"
 
     # https://api.openweathermap.org/data/2.5/weather?lat=-37.8136&lon=144.9631&appid=ab0c803febd21bec092009126752f607&units=metric
 
