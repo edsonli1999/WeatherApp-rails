@@ -1,13 +1,13 @@
 <div class="text-3xl w-full">
   <p class="font-bold underline"><%= @message %></p>
-  <p class="text-2xl"><%= Time.now.strftime("%A, %d %B %Y %I:%M %p") %></p>
+  <p class="text-2xl"><%= @curr_location.time.strftime("%A, %d %B %Y %I:%M %p") %></p>
 
 </div>
 
 <div class="mx-auto max-w-md mt-28">
   <div class="relative px-6 pt-10 pb-8 text-xl font-semi-bold w-full text-center bg-gray-200 shadow-xl ring-1 ring-gray-900/5 rounded-lg">
     <%# Melbourne %>
-    <h1 class="text-2xl font-bold"> <%= @weather.location %> </h1>
+    <h1 class="text-2xl font-bold"> <%= @curr_location.full_details %> </h1>
     <div class="flex flex-row justify-center">
       <p class="mt-8"> <%= @weather.description %> </p>
       <img src="<%= @weather.icon_url %>"/>

@@ -18,7 +18,7 @@ class Weather
   end
 
   def location
-    data['name']
+    "#{data['name']}, #{data.dig("sys","country")}"
   end
 
   def temperature

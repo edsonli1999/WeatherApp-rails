@@ -78,3 +78,5 @@ gem "litestack", "~> 0.4.3"
 gem "dockerfile-rails", ">= 1.6", :group => :development
 
 gem "honeybadger", "~> 5.5"
+
+gem "geocoder"
