@@ -7,12 +7,17 @@ class Location
     @location = location
   end
 
-  def time
-  # Doesn't work for "America","Los Angeles". Need to figure out what in first location can work with Time.use_zone
-    Time.use_zone(first_location.data["name"]) do
-      Time.zone.now
-    end
-  end
+  # def time
+  # # Doesn't work for "America","Los Angeles". Need to figure out what in first location can work with Time.use_zone
+
+  # # Use timezone from openWeather API
+  #   # Time.use_zone(39600) do
+  #   # Time.zone.now
+  #   # end
+  #   Time.use_zone(first_location.data["name"]) do
+  #     Time.zone.now
+  #   end
+  # end
 
   def full_details
     "#{first_location.data["name"]}, #{first_location.data.dig("address", "country")}"

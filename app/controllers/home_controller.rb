@@ -11,7 +11,7 @@ class HomeController < ApplicationController
     #   puts Time.zone.now
     # end
 
-    @curr_location = Location.new("askdbakds")
+    @curr_location = Location.new("Bedok")
 
     # Pulling data from openWeather using API key and location of melbourne
     data = CurrentWeatherService.new(latitude: @curr_location.lat , longitude: @curr_location.lon , units: "metric").call

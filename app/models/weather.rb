@@ -31,6 +31,16 @@ class Weather
     data.dig('main', 'feels_like')
   end
 
+  def time
+    # Use timezone from openWeather API
+    # Time.use_zone(39600) do
+    # Time.zone.now
+    # end
+    Time.use_zone(data["timezone"]) do
+      Time.zone.now
+    end
+  end
+
   private
 
   attr_reader :data
