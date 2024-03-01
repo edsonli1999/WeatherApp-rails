@@ -14,9 +14,14 @@
 <%= form.button "Search"%> 
 <% end %>
 
+<p> Note: The location searching is extremely unpolished, and as such will have to be accurate in spelling. </p>
+<p> If you provide a city that also has the same name as another city in a different country (ie: Melbourne <br> which also exists in United States), then the 'first' Melbourne will be picked from the API. If you provide <br> a city name that doesn't exist in the OpenWeather API, then it will display the default city. <p>
+
+<%# form.button has an empty 'button=' argument in the URL, which doesn't work when running a production server but works with fly.io deployment for some reason %>
+
 
 <div class="mx-auto max-w-md mt-28">
-  <div class="relative px-6 pt-10 pb-8 text-xl font-semi-bold w-full text-center bg-gray-200 shadow-xl ring-1 ring-gray-900/5 rounded-lg">
+  <div class="relative px-6 pt-10 pb-8 text-xl font-semi-bold w-full text-center bg-gray-200 shadow-xl ring-1 ring-gray-900/5 rounded-lg hover:-translate-y-2 hover:shadow-xl duration-500">
     <%# Melbourne %>
     <h1 class="text-2xl font-bold"> <%= @curr_location.full_details %> </h1>
     <div class="flex flex-row justify-center">
@@ -31,8 +36,8 @@
 </div>
 
 
-<div
+<%# <div
   class="group flex flex-col justify-start items-start gap-2 w-96 h-56 duration-500 relative rounded-lg p-4 bg-gray-900 hover:-translate-y-2 hover:shadow-xl shadow-gray-800"
 >
   
-</div>
+</div> %>
