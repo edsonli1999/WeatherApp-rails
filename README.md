@@ -1,8 +1,9 @@
 # Tech Stack
 - Ruby on Rails, Tailwind CSS, both Postgresql and Sqlite3, deployed on Heroku and Fly.io
+- Due to ease of deployment, Fly.io would most likely be the most updated out of the 3.
+- Fly.io link (Sqlite3): https://edsons-weather-app.fly.dev
 - AWS EB link (Sqlite3): http://edsons-weather.ap-southeast-2.elasticbeanstalk.com
 - Heroku link (Postgresql): https://frozen-peak-54821-90696d8859b1.herokuapp.com
-- Fly.io link (Sqlite3): https://edsons-weather-app.fly.dev
 
 # Some important CLI commands
 
