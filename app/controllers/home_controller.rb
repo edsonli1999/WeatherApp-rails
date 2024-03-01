@@ -4,17 +4,27 @@ class HomeController < ApplicationController
   def index
     @message = "Edson's Weather App ☺"
 
-    # Pulling the latitude and longtitude from the user
-
-
-    # Time.use_zone('asdadasdadas') do
-    #   puts Time.zone.now
-    # end
-
-    @curr_location = Location.new("Bedok")
+    # Default location for initial load
+    @curr_location = Location.new("Melbourne")
 
     # Pulling data from openWeather using API key and location of melbourne
     data = CurrentWeatherService.new(latitude: @curr_location.lat , longitude: @curr_location.lon , units: "metric").call
     @weather = Weather.new(data)
+  end
+
+  def getLocation
+
+    @message = "Edson's Weather App ☺"
+
+    @location = params[:location]
+
+    # Pulling the latitude and longtitude from the user
+    @curr_location = Location.new(@location)
+
+    # Pulling data from openWeather using API key and location of melbourne
+    data = CurrentWeatherService.new(latitude: @curr_location.lat , longitude: @curr_location.lon , units: "metric").call
+    @weather = Weather.new(data)
+
+    puts "Hi! The location you wanted is: #{@curr_location}"
   end
 end
