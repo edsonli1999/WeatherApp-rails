@@ -1,6 +1,5 @@
 <div class="text-3xl w-full">
-  <p class="font-bold underline"><%= @message %></p>
-  <p class="text-2xl"><%= @weather.time.strftime("%A, %d %B %Y %I:%M %p") %></p>
+  <p class="font-bold underline"> <%= link_to @message, root_path %> </p>
 </div>
 
 <%# <form action="/location" method="get"> 
@@ -24,6 +23,7 @@
   <div class="relative px-6 pt-10 pb-8 text-xl font-semi-bold w-full text-center bg-gray-200 shadow-xl ring-1 ring-gray-900/5 rounded-lg hover:-translate-y-2 hover:shadow-xl duration-500">
     <%# Melbourne %>
     <h1 class="text-2xl font-bold"> <%= @curr_location.full_details %> </h1>
+    <p class="text-xl"><%= @weather.time.strftime("%A, %d %B %Y %I:%M %p") %></p>
     <div class="flex flex-row justify-center">
       <p class="mt-8"> <%= @weather.description %> </p>
       <img src="<%= @weather.icon_url %>"/>
