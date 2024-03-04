@@ -11,6 +11,7 @@
 - Checks that location from user against location.rb class (which uses Geocoder API), and then finds the first location with the given name. Otherwise sets to default location.
 - Now, with that location, get its longitude and latitude from the Geocoder API, and make a HTTP Get request to the OpenWeather API (done in current_weather_service.rb).
 - OpenWeather API returns an object with some data of the current weather at that location, to which i render it back out through a mix of Rails HTMl helpers, as well as standard HTML and CSS.
+- Lastly, using the timezone supplied from OpenWeatherAPI, parse that into a Rails Time object to get the current time and date at that given location.
 
 # Some important CLI commands
 
