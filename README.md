@@ -1,9 +1,16 @@
 # Tech Stack
-- Ruby on Rails, Tailwind CSS, both Postgresql and Sqlite3, deployed on Heroku and Fly.io
+- Ruby on Rails, Tailwind CSS, both Postgresql and Sqlite3, deployed on Heroku and Fly.io.
+- APIs used: Geocoder, OpenWeather
 - Due to ease of deployment, Fly.io would most likely be the most updated out of the 3.
 - Fly.io link (Sqlite3): https://edsons-weather-app.fly.dev
 - AWS EB link (Sqlite3): http://edsons-weather.ap-southeast-2.elasticbeanstalk.com
 - Heroku link (Postgresql): https://frozen-peak-54821-90696d8859b1.herokuapp.com
+
+# General code logic:
+- Takes in user input (Location) via a form input box, otherwise displays weather of default location (Melbourne, Aus)
+- Checks that location from user against location.rb class (which uses Geocoder API), and then finds the first location with the given name. Otherwise sets to default location.
+- Now, with that location, get its longitude and latitude from the Geocoder API, and make a HTTP Get request to the OpenWeather API (done in current_weather_service.rb).
+- OpenWeather API returns an object with some data of the current weather at that location, to which i render it back out through a mix of Rails HTMl helpers, as well as standard HTML and CSS.
 
 # Some important CLI commands
 
