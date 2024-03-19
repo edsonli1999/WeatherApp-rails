@@ -1,18 +1,19 @@
-<div class="text-3xl w-full">
-  <p class="font-bold underline"> <%= link_to @message, root_path %> </p>
+<div class="p-5"> 
+  <div class="text-3xl w-full">
+    <p class="font-bold underline"> <%= link_to @message, root_path %> </p>
+  </div>
+
+  <%# <form action="/location" method="get"> 
+    <input type="text" placeholder="City, Country">
+      <button type="submit"> Search </button>
+    </input>
+  </form> %>
+
+  <%= form_with url: "/location", method: :get do |form| %>
+  <%= form.text_field :location, placeholder: "City, Country" %>
+  <%= form.button "Search" %> 
+  <% end %>
 </div>
-
-<%# <form action="/location" method="get"> 
-  <input type="text" placeholder="City, Country">
-    <button type="submit"> Search </button>
-  </input>
-</form> %>
-
-<%= form_with url: "/location", method: :get do |form| %>
-<%= form.text_field :location, placeholder: "City, Country" %>
-<%= form.button "Search" %> 
-<% end %>
-
 <%# form.button has an empty 'button=' argument in the URL, which doesn't work when running a production server but works with fly.io deployment for some reason %>
 
 <div class="mx-auto max-w-md mt-28">
