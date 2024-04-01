@@ -1,10 +1,10 @@
 # Tech Stack
 - Ruby on Rails, Tailwind CSS, both Postgresql and Sqlite3, deployed on Heroku and Fly.io.
 - APIs used: Geocoder, OpenWeather
-- Fly.io would most likely be the most updated out of the 3.
+- Due to cost issues, Fly.io will be the only host used. AWS EB and Heroku links are outdated and no longer exist.
 - Fly.io link (Sqlite3): https://edsons-weather-app.fly.dev
 - AWS EB link (Sqlite3): http://edsons-weather.ap-southeast-2.elasticbeanstalk.com (DEPRECATED)
-- Heroku link (Postgresql): https://frozen-peak-54821-90696d8859b1.herokuapp.com (Old version)
+- Heroku link (Postgresql): https://frozen-peak-54821-90696d8859b1.herokuapp.com (DEPRECATED)
 
 # General code logic:
 - Takes in user input (Location) via a form input box, otherwise displays weather of default location (Melbourne, Aus)
